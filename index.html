@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>My Awesome Website</title>
-    <meta name="author" content="Put your name here">
+    <meta name="author" content="Imran Senyonjo, Margaret Hu">
     
     <!-- If you are using p5.js to create drawings or games, uncomment the next line: -->
     <!--
@@ -13,13 +13,26 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
   </head>
 
-<body>
+<body class="container">
   <header>
-    <h1 class="page-title">My Awesome Website</h1>
-    <p>This is some awesome text.</p>
+    <h1 class="page-title">Panda Pearls</h1>
   </header>
+  <section>
+    <div class="card card-default">
+      <div class="card-body">
+        <form data-order="form">
+          <div class="form-group">
+            <label for="emailInput">Email</label>
+            <input class="form-control" type="email" name="emailAddress"
+            id="emailInput" value="" placeholder="user@company.com" required>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <script src="scripts/main.js"></script>
 </body>
