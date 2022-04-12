@@ -1,1 +1,44 @@
-/* Put your CSS here */
+@font-face {
+    font-family: 'airstreamregular';
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Airstream-webfont.eot");
+    src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Airstream-webfont.woff') format('woff'),
+         url('fonts/Airstream-webfont.ttf') format('truetype'),
+         url('fonts/Airstream-webfont.svg#lakeshore') format('svg');   
+}
+
+* {
+    color: rgb(0, 0, 0);
+}
+
+.top {
+    height: 100px;
+    width: 100px;
+}
+
+body {
+    background: url('../images/panda.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-body {
+    background-image: linear-gradient(to bottom, green, red);
+}
+
+.page-title {
+    background-image: linear-gradient(to bottom, grey, #00FFEF);
+    font-size: 40px;
+    font-family: airstreamregular;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(43, 20, 173);
+}
+
+.co {
+    background-color: cadetblue;
+    text-align: right;
+    padding-right: 20px;
+}
