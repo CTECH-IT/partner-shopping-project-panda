@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <title>My Awesome Website</title>
-    <meta name="author" content="Imran Senyonjo, Margaret Hu">
-    
-    <!-- If you are using p5.js to create drawings or games, uncomment the next line: -->
-    <!--
+<head>
+  <meta charset="utf-8">
+  <title>My Awesome Website</title>
+  <meta name="author" content="Imran Senyonjo, Margaret Hu">
+
+  <!-- If you are using p5.js to create drawings or games, uncomment the next line: -->
+  <!--
       <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
     -->
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
-  </head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+</head>
 
 <body class="container">
   <header>
@@ -26,100 +26,154 @@
         <form data-panda-order="form">
           <div class="form-group">
             <label for="emailInput">Email</label>
-            <input class="form-control" type="email" name="emailAddress"
-            id="emailInput" value="" placeholder="user@company.com" required>
+            <input class="form-control" type="email" name="emailAddress" id="emailInput" value=""
+              placeholder="user@company.com" required>
           </div>
-          <div class="form-group">
-            <label for="milktea">Milk Tea</label>
-            <select id="milktea" class="form-control" name="milk tea">
-              <option value="black milk tea">
-                Black milk tea
-                <img src="images/bmt.png" alt="bmt">
-              </option>
-              <option value="thai milk tea">
-                Thai milk tea
-                <img src="images/thmt.png" alt="thmt">
-              </option>
-              <option value="taro milk tea">
-                Taro milk tea
-                <img src="images/tamt.png" alt="tamt">
-              </option>
-              <option value="honey milk tea">
-                Honey milk tea
-                <img src="images/hmt.png" alt="hmt">
-              </option>
-              <option value="jasmine milk tea">
-                Jasmine milk tea
-                <img src="images/jmt.png" alt="jmt">
-              </option>
-              <option value="coconut milk tea">
-                Coconut milk tea
-                <img src="images/cmt.png" alt="cmt">
-              </option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="fruittea">Fruit Tea</label>
-            <select id="fruittea" class="form-control" name="fruit tea">
-              <option value="panda fruit tea">
-                Panda fruit tea
-                <img src="images/pft.png" alt="pft">
-              </option>
-              <option value="mango green tea">
-                Mango green tea
-                <img src="images/mgt.png" alt="mgt">
-              </option>
-              <option value="passion fruit green tea">
-                Passion fruit green tea
-                <img src="images/pfgt.png" alt="pfgt">
-              </option>
-              <option value="grapefruit green tea">
-                Grapefruit green tea
-                <img src="images/gfgt.png" alt="gfgt">
-              </option>
-              <option value="guava green tea">
-                Guava green tea
-                <img src="images/ggt.png" alt="ggt">
-              </option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="slush">Slush</label>
-            <select id="slush" class="form-control" name="Slush">
-              <option value="mango snow">
-                Mango snow
-                <img src="images/ms.png" alt="ms">
-              </option>
-              <option value="taro">
-                Taro
-                <img src="images/ts.png" alt="ts">
-              </option>
-              <option value="oreo">
-                Oreo
-                <img src="images/oms.png" alt="oms">
-              </option>
-              <option value="strawberry milk">
-                Strawberry milk
-                <img src="images/sms.png" alt="sms">
-              </option>
-              <option value="passion fruit">
-                Passion fruit
-                <img src="images/pfs.png" alt="pfs">
-              </option>
-              <option value="italian mocha">
-                Italian mocha
-                <img src="images/ims.png" alt="ims">
-              </option>
-              <option value="pineapple">
-                Pineapple
-                <img src="images/ps.png" alt="ps">
-              </option>
-              <option value="caramel macchiato">
-                Caramel macchiato
-                <img src="images/cms.png" alt="cms">
-              </option>
-            </select>
-          </div>
+
+          <ul class="list">
+            <div class="list-title">
+              <h6>Milk Tea</h6>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="milktea" value="black milk tea">
+                Black Milk Tea
+                <br>
+                <img class="list-image" src="images/bmt.png" alt="black milk tea">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="milktea" value="thai milk tea">
+                Thai Milk Tea
+                <br>
+                <img class="list-image" src="images/thmt.png" alt="thai milk tea">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="milktea" value="taro milk tea">
+                Taro Milk Tea
+                <br>
+                <img class="list-image" src="images/tamt.png" alt="taro milk tea">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="milktea" value="honey milk tea">
+                Honey Milk Tea
+                <br>
+                <img class="list-image" src="images/hmt.png" alt="honey milk tea">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="milktea" value="jasmine milk tea">
+                Jasmine Milk Tea
+                <br>
+                <img class="list-image" src="images/jmt.png" alt="jasmine milk tea">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="milktea" value="coconut milk tea">
+                Coconut Milk Tea
+                <br>
+                <img class="list-image" src="images/cmt.png" alt="coconut milk tea">
+              </label>
+            </div>
+          </ul>
+          <ul class="list">
+            <div class="list-title">
+              <h6>Fruit Tea</h6>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="fruittea" value="panda fruit tea">
+                Panda Fruit Tea
+                <br>
+                <img class="list-image" src="images/pft.png" alt="panda fruit tea">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="fruittea" value="mango green tea">
+                Mango Green Tea
+                <br>
+                <img class="list-image" src="images/mgt.png" alt="mango green tea">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="fruittea" value="passion fruit green tea">
+                Passion Fruit Green Tea
+                <br>
+                <img class="list-image" src="images/pfgt.png" alt="passion fruit green tea">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="fruittea" value="grapefruit green tea">
+                Grapefruit Green Tea
+                <br>
+                <img class="list-image" src="images/gfgt.png" alt="grapefruit green tea">
+              </label>
+            </div>
+          </ul>
+          <ul class="list">
+            <div class="list-title">
+              <h6>Slush</h6>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="slush" value="mango snow">
+                Mango Snow Slush
+                <br>
+                <img class="list-image" src="images/ms.png" alt="mango snow">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="slush" value="taro">
+                Taro Slush
+                <br>
+                <img class="list-image" src="images/ts.png" alt="taro">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="slush" value="oreo">
+                Oreo Slush
+                <br>
+                <img class="list-image" src="images/oms.png" alt="oreo">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="slush" value="strawberry milk">
+                Strawberry Milk Slush
+                <br>
+                <img class="list-image" src="images/sms.png" alt="strawberry milk">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="slush" value="passion fruit">
+                Passion Fruit Slush
+                <br>
+                <img class="list-image" src="images/pfs.png" alt="passion fruit">
+              </label>
+            </div>
+            <div class="list-item">
+              <label>
+                <input type="checkbox" name="slush" value="pineapple">
+                Pineapple Slush
+                <br>
+                <img class="list-image" src="images/ps.png" alt="pineapple fruit">
+              </label>
+            </div>
+          </ul>
+
           <div>
             <h6>Size</h6>
           </div>
@@ -141,85 +195,78 @@
               Big
             </label>
           </div>
+
+          <ul class="list">
           <div>
             <h6>Toppings</h6>
           </div>
-          <div class="checkbox">
+          <div class="list-item">
             <label>
               <input type="checkbox" name="toppings" value="black pearls">
-              Black pearls
+              Black Pearls
               <br>
-              <img class="top" src="images/bp.png" alt="bp">
+              <img class="list-image" src="images/bp.png" alt="bp">
             </label>
           </div>
-          <div class="checkbox">
+          <div class="list-item">
             <label>
               <input type="checkbox" name="toppings" value="snow cream">
-              Snow cream
+              Snow Cream
               <br>
-              <img class="top" src="images/sc.png" alt="sc">
+              <img class="list-image" src="images/sc.png" alt="sc">
             </label>
           </div>
-          <div class="checkbox">
+          <div class="list-item">
             <label>
               <input type="checkbox" name="toppings" value="taro bells">
-              Taro bells
+              Taro Balls
               <br>
-              <img class="top" src="images/tb.png" alt="tb">
+              <img class="list-image" src="images/tb.png" alt="tb">
             </label>
           </div>
-          <div class="checkbox">
+          <div class="list-item">
             <label>
               <input type="checkbox" name="toppings" value="Nata de coco">
-              Nata de coco
+              Nata de Coco
               <br>
-              <img class="top" src="images/ndc.png" alt="ndc">
+              <img class="list-image" src="images/ndc.png" alt="ndc">
             </label>
           </div>
-          <div class="checkbox">
+          <div class="list-item">
             <label>
               <input type="checkbox" name="toppings" value="whipping cream">
-              Whipping cream
+              Whipped Cream
               <br>
-              <img class="top" src="images/wc.png" alt="wc">
+              <img class="list-image" src="images/wc.png" alt="wc">
             </label>
           </div>
-          <div class="checkbox">
+          <div class="list-item">
             <label>
               <input type="checkbox" name="toppings" value="oreo">
               Oreo
               <br>
-              <img class="top" src="images/o.png" alt="o">
+              <img class="list-image" src="images/o.png" alt="o">
             </label>
-          </div> 
-          <div class="form-group">
-            <label for="qty">Quantity:</label>
-            <input name="quantity" id="qty">
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-          <button type="reset" class="btn btn-secondary">Reset</button>
+          <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </div>
+        </ul> 
         </form>
       </div>
     </div>
 
-    <!--the checklist-->
-    <div class="card card-default">
-      <div class="card-body">
-        <h4>Pending orders: </h4>
-        <div data-panda-order="checklist">
-
+      <!-- the checklist -->
+      <div class="card card-default">
+        <div class="card-body">
+          <h4>Pending Orders:</h4>
+          <div data-panda-order="checklist"></div>
         </div>
       </div>
-      <div class="co" class="checkbox">
-        <label>
-          <input type="checkbox" name="checkout" value="Checkout">
-          Checkout
-        </label>
-      </div>
-    </div>
   </section>
 
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="scripts/formhandler.js"></script>
   <script src="scripts/checklist.js"></script>
@@ -228,4 +275,5 @@
   <script src="scripts/truck.js"></script>
   <script src="scripts/main.js"></script>
 </body>
+
 </html>

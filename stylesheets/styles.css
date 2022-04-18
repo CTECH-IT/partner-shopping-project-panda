@@ -13,11 +13,6 @@
     color: rgb(0, 0, 0);
 }
 
-.top {
-    height: 100px;
-    width: 100px;
-}
-
 body {
     background: url('../images/panda.jpg');
     background-repeat: no-repeat;
@@ -41,4 +36,30 @@ body {
     background-color: cadetblue;
     text-align: right;
     padding-right: 20px;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+.list-item {
+    border: 1px solid rgb(100%, 100%, 100%);
+    border: 1px solid rgba(100%, 100%, 100%, 0.8);
+    display: inline-block;
+    max-width: 200px;
+    min-width: 200px;
+}
+
+.list-image {  
+    display: block;
+    height: 200px;
+    width: 200px;  
+}
+
+@media all and (max-width: 480px) {
+    .list-item {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+    }
 }
