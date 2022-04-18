@@ -29,7 +29,6 @@
     }
 
     CheckList.prototype.addRow = function (bobaOrder) {
-        this.removeRow(bobaOrder.emailAddress);
         var rowElement = new Row(bobaOrder);
         this.$element.append(rowElement.$element);
     };
