@@ -13,18 +13,22 @@
     let myShop = new Shop('12345', new DataStore());
     window.myShop = myShop;
 
-    //find the form that is being submitted and create a formHandler object
-    let formHandler = new FormHandler(FORM_SELECTOR);
-    //find the checklist that is being updated and create a CheckList object
-    let checkList = new CheckList(CHECKLIST_SELECTOR);
+    if (FormHandler !== undefined) {
+        let formHandler = new FormHandler(FORM_SELECTOR);
 
-    //when a checkbox is clicked, call "deliverOrder" on myTruck
+        formHandler.addSubmitHandler(function (data) {
+            myCart.createOrder.call(myShop, data);
+        });
+    } //else if (CheckList !== undefined) {
+       // let checkList = new CheckList(CHECKLIST_SELECTOR);
+
+       // remoteDS.getAll((orders) => {
+        //    for (let order of Object.values(orders)) {
+       //         checkList.addRow(order);
+        //    }
+       // })
+   // }
+
     checkList.addClickHandler(myShop.deliverOrder.bind(myShop));
-    
-    //when the submit button is called, create the order and add a checkbox
-    formHandler.addSubmitHandler(function (data) {
-        myShop.createOrder.call(myShop, data);
-        checkList.addRow.call(checkList, data);
-    });
 
 })(window);
