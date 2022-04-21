@@ -3,12 +3,18 @@
 
     const FORM_SELECTOR = '[data-panda-order="form"]';
     const CHECKLIST_SELECTOR = '[data-panda-order="checklist"]';
+    const SERVER_URL = 'http://saturn.rochesterschools.org:8080/json';
 
     let App = window.App;
     let Shop = App.Shop;
     let DataStore = App.DataStore;
     let FormHandler = App.FormHandler;
     let CheckList = App.CheckList;
+    let RemoteDataStore = App.RemoteDataStore;
+
+    let remoteDS = new RemoteDataStore(SERVER_URL);
+
+    let checkList = new CheckList(CHECKLIST_SELECTOR);
 
     let myShop = new Shop('12345', new DataStore());
     window.myShop = myShop;
@@ -17,7 +23,7 @@
        // let formHandler = new FormHandler(FORM_SELECTOR);
 
        // formHandler.addSubmitHandler(function (data) {
-       //     myCart.createOrder.call(myShop, data);
+       //     myShop.createOrder.call(myShop, data);
        // });
     if (CheckList !== undefined) {
         let checkList = new CheckList(CHECKLIST_SELECTOR);

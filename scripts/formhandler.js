@@ -27,6 +27,7 @@
                 data[item.name] = item.value;
                 console.log(item.name + ' is ' + item.value);
             });
+            data.panda = 'panda';
             console.log(data);
             func(data);
 

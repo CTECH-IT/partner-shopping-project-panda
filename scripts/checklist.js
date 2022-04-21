@@ -34,37 +34,39 @@
     };
 
     function Row(bobaOrder) {
-        let $div = $('<div></div>', {
-            'data-panda-order': 'checkbox',
-            'class': 'checkbox'
-        });
-        let $label = $('<label></label>');
+        if (bobaOrder.panda == 'panda') {
+            let $div = $('<div></div>', {
+                'data-panda-order': 'checkbox',
+                'class': 'checkbox'
+            });
+            let $label = $('<label></label>');
 
-        let $checkbox = $('<input></input>', {
-            type: 'checkbox',
-            value: bobaOrder.emailAddress
-        });
+            let $checkbox = $('<input></input>', {
+                type: 'checkbox',
+                value: bobaOrder.emailAddress
+            });
 
-        let description = bobaOrder.size + ' ';
-        if (bobaOrder.milktea) {
-            description += bobaOrder.milktea + ' ';
-        }
-        if (bobaOrder.fruittea) {
-            description += bobaOrder.fruittea + ' ';
-        }
-        if (bobaOrder.slush) {
-            description += bobaOrder.slush + ' ';
-        }
-        if (bobaOrder.toppings) {
-            description += "with " + bobaOrder.toppings + ' ';
-        }
-        description += ' (' + bobaOrder.emailAddress + ')';
+            let description = bobaOrder.size + ' ';
+            if (bobaOrder.milktea) {
+                description += bobaOrder.milktea + ' ';
+            }
+            if (bobaOrder.fruittea) {
+                description += bobaOrder.fruittea + ' ';
+            }
+            if (bobaOrder.slush) {
+                description += bobaOrder.slush + ' ';
+            }
+            if (bobaOrder.toppings) {
+                description += "with " + bobaOrder.toppings + ' ';
+            }
+            description += ' (' + bobaOrder.emailAddress + ')';
 
-        $label.append($checkbox);
-        $label.append(description);
-        $div.append($label);
+            $label.append($checkbox);
+            $label.append(description);
+            $div.append($label);
 
-        this.$element = $div;
+            this.$element = $div;
+        }
     }
 
     App.CheckList = CheckList;

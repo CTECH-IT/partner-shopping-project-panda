@@ -18,7 +18,7 @@
         this.db.remove(customerId);
     }
 
-    Shop.prototype.printOrders = function() {
+    Shop.prototype.printOrder = function() {
         //first, get all the email addresses (key)
         let customerIdArray = Objects.keys(this.db.getAll());
 
